@@ -1,0 +1,8 @@
+numpy
+pandas
+tensorflow==v2.0.0-beta0
+keras
+waitress
+flask
+simplejson
+sqlalchemy
