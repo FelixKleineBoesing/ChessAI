@@ -52,7 +52,7 @@ class Board:
                 self.board[stone.coord[0], stone.coord[1]] = stone.value
                 self.id_store[stone.coord[0], stone.coord[1]] = stone.id
 
-    def get_all_moves(self, player_name: str):
+    def get_all_moves(self, player_name: str, check: bool, piece_coord: np.ndarray):
         tmp = {}
 
         # because a player must jump an enemy stone we proof here if there is any move where a stone can be jumped

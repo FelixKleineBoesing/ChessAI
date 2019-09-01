@@ -54,6 +54,8 @@ class Game:
         cum_rewards_agent_one = 0
         cum_rewards_agent_two = 0
         self.runhistory_states.append(self.board.board)
+        # TODO supply check and the responsible piece to get_action_space
+        check = False
         while not finished:
             reward_player_one, reward_player_two = 0, 0
             number_stones_before = self.board.number_of_stones()
@@ -98,7 +100,8 @@ class Game:
                 finished = True
             if finished:
                 break
-
+            # TODO
+            #check =
             reward_player_one, reward_player_two = 0, 0
             number_stones_before = self.board.number_of_stones()
             self.turns += 1
@@ -138,6 +141,8 @@ class Game:
                 reason = "Player two is blocked and can´t move!"
                 winner = self.agent_one.name
                 finished = True
+            # TODO
+            # check =
 
         if verbose:
             print("Game finished with the following message: {}".format(reason))
