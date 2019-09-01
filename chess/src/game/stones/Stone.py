@@ -1,12 +1,13 @@
+import abc
 import numpy as np
 import copy
 
-from checkers.src.agents.Agent import Agent
+from chess.src.agents.Agent import Agent
 
 
-class Stone:
+class Stone(abc.ABC):
 
-    def __init__(self,id: int,  player: Agent, coord: np.ndarray, status: str, value: int,
+    def __init__(self, id: int,  player: Agent, coord: np.ndarray, status: str, value: int,
                  board_size: int):
         self.id = id
         self.player = player

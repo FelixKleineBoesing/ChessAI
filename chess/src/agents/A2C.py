@@ -5,10 +5,10 @@ import os
 import logging
 import random
 
-from checkers.src.Helpers import min_max_scaling, multiply
-from checkers.src.game.GameHelpers import ActionSpace
-from checkers.src.ReplayBuffer import ReplayBuffer
-from checkers.src.agents.Agent import Agent
+from chess.src.Helpers import min_max_scaling, multiply
+from chess.src.game.GameHelpers import ActionSpace
+from chess.src.ReplayBuffer import ReplayBuffer
+from chess.src.agents.Agent import Agent
 
 
 class A2C(Agent):

@@ -3,3 +3,4 @@
 rewards.txt
 python_backend/data
 checkers/data/modeldata
+chess/data/modeldata/

@@ -2,10 +2,10 @@ import abc
 import numpy as np
 import logging
 
-from checkers.src.game.GameHelpers import ActionSpace
-from checkers.src.Helpers import Config
-from checkers.src.cache.RedisWrapper import RedisCache, RedisChannel
-from checkers.src.cache.RedisWrapper import get_key
+from chess.src.game.GameHelpers import ActionSpace
+from chess.src.Helpers import Config
+from chess.src.cache.RedisWrapper import RedisCache, RedisChannel
+from chess.src.cache.RedisWrapper import get_key
 
 
 class Agent(abc.ABC):

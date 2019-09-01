@@ -1,14 +1,14 @@
 import logging
 
-from checkers.src.game.Game import Game
-from checkers.src.game.Board import Board
-from checkers.src.agents.RandomAgentWithMaxValue import RandomAgentWithMaxValue
-from checkers.src.agents.RandomAgent import RandomAgent
-from checkers.src.agents.QLearningAgent import QLearningAgent
-from checkers.src.agents.QLearningLSTMAgent import QLearningLSTMAgent
-from checkers.src.agents.SARSAAgent import SARSAAgent
-from checkers.src.agents.SARSALSTMAgent import SARSALSTMAgent
-from checkers.src.agents.A2C import A2C
+from chess.src.game.Game import Game
+from chess.src.game.Board import Board
+from chess.src.agents.RandomAgentWithMaxValue import RandomAgentWithMaxValue
+from chess.src.agents.RandomAgent import RandomAgent
+from chess.src.agents.QLearningAgent import QLearningAgent
+from chess.src.agents.QLearningLSTMAgent import QLearningLSTMAgent
+from chess.src.agents.SARSAAgent import SARSAAgent
+from chess.src.agents.SARSALSTMAgent import SARSALSTMAgent
+from chess.src.agents.A2C import A2C
 
 
 def run_random_vs_random_max():
