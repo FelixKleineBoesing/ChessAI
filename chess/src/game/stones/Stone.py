@@ -7,7 +7,7 @@ from chess.src.agents.Agent import Agent
 
 class Stone(abc.ABC):
 
-    def __init__(self, id: int,  player: Agent, coord: np.ndarray, status: str):
+    def __init__(self, id: int,  player: Agent, coord: np.ndarray, status: str, value: int):
         self.id = id
         self.player = player
         self.start_row = coord[0]
@@ -17,6 +17,7 @@ class Stone(abc.ABC):
         self.directions = []
         self.board_size = 8
         self.moved = False
+        self.value = value
 
     @property
     def coord(self):
@@ -38,13 +39,13 @@ class Stone(abc.ABC):
         pass
 
 
-def _check_if_position_on_board(coord: tuple, board_size: int):
+def _check_if_position_on_board(coord: tuple):
     """
     checks whether coordinates are inside of board
     :param coord:
     :param board_size:
     :return:
     """
-    in_row = coord[0] in range(board_size)
-    in_col = coord[1] in range(board_size)
+    in_row = coord[0] in range(8)
+    in_col = coord[1] in range(8)
     return in_row and in_col
